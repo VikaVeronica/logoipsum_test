@@ -19,7 +19,7 @@ body{
     padding: 53px;
 }
 
-.header_flex, .footer_flex, .about{
+.header_flex, .footer_flex, .about, .subscribe, .plan_flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +75,7 @@ body{
     transition: 500ms;
 }
 
-.about{
+.about, .subscribe{
     margin-top: 104px;
     margin-bottom: 85px;
 }
@@ -90,6 +90,7 @@ body{
 }
 
 .about_text{
+    font-family: 'Mulish', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -106,7 +107,6 @@ body{
 
 .button_violet:hover{
     background-color: #3b3be7;
-
 }
 
 .button_transparent{
@@ -121,21 +121,14 @@ body{
     transition: 500ms;
 }
 
-.container_email{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 38px;
-    }
-
 .email_text{
     font-weight: 700;
     font-size: 50px;
     line-height: 57px;
     letter-spacing: -1.56316px;
     color: #19191B;
-    margin-right: 39px;
-}
+    margin-bottom: 38px;
+    }
 
 .form_email{
     box-sizing: border-box;
@@ -144,12 +137,93 @@ body{
     border: 1px solid #7087FF;
     border-radius: 10px;
     margin-right: 39px;
+    padding-left: 14px;  
+}
 
+.form_email::placeholder, .form_email{
     font-weight: 700;
     font-size: 17px;
     line-height: 22px;
     letter-spacing: -0.531474px;
     color: #000000;
-    padding-left: 14px;
 }
 
+.form_email:focus{
+    outline: none;
+}
+
+.plan{
+    margin-bottom: 132px;
+}
+
+.plan_title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+    max-width: 504px;
+    margin-bottom: 110px;
+}
+
+.item{
+    width: 330px;
+    background: #F8F8F8;
+    border-radius: 10px;
+    text-align: center;
+    padding: 34px 0 27px;
+}
+
+.item:hover{
+    transition: 500ms;
+    background: #FF7143;
+    box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+}
+
+.item_text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.562737px;
+    color: #696871;
+    margin-bottom: 22px;
+}
+
+.item:hover .item_text, .item:hover .item_title, .item:hover .item_li{
+    color: white;
+    transition: 500ms;
+}
+
+.item_title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 56px;
+    letter-spacing: -1.03448px;
+    color: #1D293F;
+    margin-bottom: 28px;
+}
+
+.item_title span{
+    font-size: 28px;
+}
+
+.item_li{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: -0.531474px;
+    color: #696871;
+}
+
+.button_item{
+    margin-top: 36px;
+    width: 285px;
+    background-color: white;
+    color: #5454D4;
+}
+
+.item:hover .button_item{
+    transition: 500ms;
+    background: #9F3919;
+    color: white;
+}
